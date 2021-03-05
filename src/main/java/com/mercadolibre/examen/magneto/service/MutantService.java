@@ -83,6 +83,11 @@ public class MutantService {
     }
   }
 
+  /**
+   * Obtiene las estadisticas de los mutantes y humanos registrados y el ratio
+   *
+   * @return cantidad de humanos, mutantes y ratio
+   */
   public Stats getStats() {
     List<DNAVerified> listDnaVerified = dnaVerifiedRepository.findAll();
     Stats stats = new Stats();

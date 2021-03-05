@@ -14,35 +14,30 @@ de (NxN) con la secuencia del ADN. Las letras de los Strings solo pueden ser: (A
 cuales representa cada base nitrogenada del ADN.
 
 ### No Mutante
-A T G C G A
-
-C A G T G C
-
-T T A T T T
-
-A G A C G G
-
-G C G T C A
-
-T C A C T G
+| | | | | | |
+|---|---|---|---|---|---|
+|A|T|G|C|G|A|
+|C|A|G|T|G|C|
+|T|T|A|T|T|T|
+|A|G|A|C|G|G|
+|G|C|G|T|C|A|
+|T|C|A|C|T|G|
 
 ### Mutante
-A T G C G A
-
-C A G T G C
-
-T T A T G T
-
-A G A A G G
-
-C C C C T A
-
-T C A C T G
+| | | | | | |
+|---|---|---|---|---|---|
+|**A**|T|G|C|**G**|A|
+|C|**A**|G|T|**G**|C|
+|T|T|**A**|T|**G**|T|
+|A|G|A|**A**|**G**|G|
+|**C**|**C**|**C**|**C**|T|A|
+|T|C|A|C|T|G|
+ 
 
 Sabrás si un humano es mutante, si encuentras más de una secuencia de cuatro letras
 iguales , de forma oblicua, horizontal o vertical.
 
-#####Ejemplo (Caso mutante):
+##### Ejemplo (Caso mutante):
 String[] dna = {"ATGCGA","CAGTGC","TTATGT","AGAAGG","CCCCTA","TCACTG"};
 
 En este caso el llamado a la función isMutant(dna) devuelve “true”.
@@ -75,6 +70,11 @@ verificaciones de ADN: {“count_mutant_dna”:40, “count_human_dna”:100: �
 Tener en cuenta que la API puede recibir fluctuaciones agresivas de tráfico (Entre 100 y 1
 millón de peticiones por segundo).
 Test-Automáticos, Code coverage > 80%.
+
+#### Restaurar DB
+```
+mongorestore --db magneto src/main/resources/db/magneto
+```
 
 #### Iniciar Aplicacion
 ```
