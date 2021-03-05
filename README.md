@@ -49,11 +49,11 @@ En este caso el llamado a la función isMutant(dna) devuelve “true”.
 Desarrolla el algoritmo de la manera más eficiente posible.
 
 
-#####Desafíos:
-#####Nivel 1:
+##### Desafíos:
+##### Nivel 1:
 Programa (en cualquier lenguaje de programación) que cumpla con el método pedido por
 Magneto.
-#####Nivel 2:
+##### Nivel 2:
 Crear una API REST, hostear esa API en un cloud computing libre (Google App Engine,
 Amazon AWS, etc), crear el servicio “/mutant/” en donde se pueda detectar si un humano es
 mutante enviando la secuencia de ADN mediante un HTTP POST con un Json el cual tenga el
@@ -67,7 +67,7 @@ POST → /mutant/
 En caso de verificar un mutante, debería devolver un HTTP 200-OK, en caso contrario un
 403-Forbidden
 
-#####Nivel 3:
+##### Nivel 3:
 Anexar una base de datos, la cual guarde los ADN’s verificados con la API.
 Solo 1 registro por ADN.
 Exponer un servicio extra “/stats” que devuelva un Json con las estadísticas de las
@@ -76,12 +76,12 @@ Tener en cuenta que la API puede recibir fluctuaciones agresivas de tráfico (En
 millón de peticiones por segundo).
 Test-Automáticos, Code coverage > 80%.
 
-####Iniciar Aplicacion
+#### Iniciar Aplicacion
 ```
 mvn spring-boot:run
 ```
 
-####API
+#### API
 * Servicio GET
     * /stats
 * Servicio POST
