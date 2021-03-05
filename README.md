@@ -76,6 +76,10 @@ Tener en cuenta que la API puede recibir fluctuaciones agresivas de tráfico (En
 millón de peticiones por segundo).
 Test-Automáticos, Code coverage > 80%.
 
+####Iniciar Aplicacion
+```
+mvn spring-boot:run
+```
 
 ####API
 * Servicio GET
