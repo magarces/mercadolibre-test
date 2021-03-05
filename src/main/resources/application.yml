@@ -1,0 +1,12 @@
+server:
+  port: 80
+
+spring:
+  profiles:
+    active: prod
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017
+      repositories:
+        type: AUTO
+      database: magneto
